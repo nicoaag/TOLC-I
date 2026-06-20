@@ -1,0 +1,270 @@
+/* ========================= */
+/* 全体 */
+/* ========================= */
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f4f4;
+
+}
+
+
+/* ========================= */
+/* コンテナ */
+/* ========================= */
+
+.container {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+
+}
+
+
+/* ========================= */
+/* タイトル */
+/* ========================= */
+
+h1 {
+
+    text-align: center;
+
+    color: #2c3e50;
+
+}
+
+.subtitle {
+
+    text-align: center;
+
+    color: gray;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ========================= */
+/* メニュー */
+/* ========================= */
+
+.menu{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    justify-content:center;
+
+}
+
+
+/* ========================= */
+/* ボタン */
+/* ========================= */
+
+button{
+
+    padding:12px 22px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#3498db;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    background:#2980b9;
+
+}
+
+
+/* ========================= */
+/* 問題 */
+/* ========================= */
+
+.question{
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border:2px solid #3498db;
+
+    border-radius:10px;
+
+    font-size:30px;
+
+    text-align:center;
+
+    min-height:60px;
+
+}
+
+
+/* ========================= */
+/* ヒント */
+/* ========================= */
+
+.hint{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-left:8px solid orange;
+
+    background:#fff7e6;
+
+    min-height:50px;
+
+    font-size:22px;
+
+}
+
+
+/* ========================= */
+/* 答え */
+/* ========================= */
+
+.answer{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-left:8px solid green;
+
+    background:#eefbea;
+
+    min-height:50px;
+
+    font-size:24px;
+
+}
+
+
+/* ========================= */
+/* ボタンエリア */
+/* ========================= */
+
+.buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* ========================= */
+/* 区切り線 */
+/* ========================= */
+
+hr{
+
+    margin:35px 0;
+
+}
+
+
+/* ========================= */
+/* スマホ対応 */
+/* ========================= */
+
+@media(max-width:700px){
+
+    .container{
+
+        margin:10px;
+
+        padding:15px;
+
+    }
+
+    button{
+
+        width:100%;
+
+        font-size:20px;
+
+    }
+
+    .question{
+
+        font-size:24px;
+
+    }
+
+    .hint{
+
+        font-size:20px;
+
+    }
+
+    .answer{
+
+        font-size:20px;
+
+    }
+
+}
+input{
+
+    width:250px;
+
+    padding:10px;
+
+    font-size:22px;
+
+    text-align:center;
+
+    border-radius:8px;
+
+    border:2px solid #999;
+
+}
+
+.result{
+
+    margin-top:20px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
