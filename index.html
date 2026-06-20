@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOLC-I Trainer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TOLC-I Trainer</h1>
+
+        <p class="subtitle">
+            Practice Mathematics for the TOLC-I
+        </p>
+
+        <!-- ========================= -->
+        <!-- メニュー -->
+        <!-- ========================= -->
+
+        <div class="menu">
+
+            <button onclick="setMode('factoring')">
+                因数分解
+            </button>
+
+            <button onclick="setMode('ac')">
+                AC法
+            </button>
+
+            <button onclick="setMode('discriminant')">
+                判別式
+            </button>
+
+            <button onclick="setMode('function')">
+                関数
+            </button>
+
+            <button onclick="setMode('compose')">
+                合成関数
+            </button>
+
+        </div>
+
+        <hr>
+
+        <!-- ========================= -->
+        <!-- 問題 -->
+        <!-- ========================= -->
+
+        <h2>問題</h2>
+
+        <div id="question" class="question">
+
+            問題がここに表示されます。
+
+        </div>
+    
+        <input
+        type="text"
+        id="userAnswer"
+        placeholder="答えを入力">
+
+    <br><br>
+
+    <button onclick="checkAnswer()">
+    採点
+    </button>
+
+        <!-- ========================= -->
+        <!-- ボタン -->
+        <!-- ========================= -->
+
+        <div class="buttons">
+
+            <button onclick="showHint()">
+                ヒント
+            </button>
+
+            <button onclick="showAnswer()">
+                答えを見る
+            </button>
+
+            <button onclick="nextQuestion()">
+                次の問題
+            </button>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- ヒント -->
+        <!-- ========================= -->
+
+        <h2>ヒント</h2>
+
+        <div id="hint" class="hint">
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- 答え -->
+        <!-- ========================= -->
+
+        <h2>答え</h2>
+
+        <div id="answer" class="answer">
+
+        </div>
+
+    </div>
+    <h2>採点結果</h2>
+
+<div
+id="result"
+class="result">
+
+</div>
+
+    <!-- ========================= -->
+    <!-- JavaScript -->
+    <!-- ========================= -->
+
+    <script src="questions/factoring.js"></script>
+
+    <script src="questions/acmethod.js"></script>
+
+    <script src="questions/discriminant.js"></script>
+
+    <script src="questions/functions.js"></script>
+
+    <script src="questions/compose.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
