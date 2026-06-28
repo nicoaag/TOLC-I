@@ -55,6 +55,10 @@ function nextQuestion() {
             currentQuestion = generateComposeQuestion();
             break;
 
+        case "triangle":
+            currentQuestion = generateTriangleLawQuestion();
+            break;
+
     }
 
     displayQuestion();
